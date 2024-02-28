@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Oswald" re="stylesheet">
+        <link href="styles.css" re="stylesheet">
+        <title>Regristration Form</title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+            padding: 50px;
+            background-color: #778899;
+            background-clip: padding-box, content-box;
+            font-family: 'Oswald', sans-serif;
+            line-height: 1.5;
+            }
+            .button{
+                color: white;
+                cursor: pointer;
+                border: 0px solid black;
+                width: 100px;
+                height: 30px;
+            }
+            .Submit{
+                background-color: rgb(0, 143, 0);
+            }
+            .Reset{
+                background-color: rgb(255, 0, 0);
+            }
+            div{
+                background-color: rgb(255, 255, 255);
+                width: 290px;
+                border: 0px solid black;
+                padding: 30px;
+                margin: 20px;
+                border-radius: 10px;
+            }
+            input[type="text"]{
+                width: 280px;
+            }
+            textarea{
+                height: 100px;
+                width: 280px;
+            }
+            input[type="date"]{
+                width: 280px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1>Regristration Form</h1>
+        <form>
+            <label for="firstName">First Name: </label>
+            <br>
+            <input type="text" id="firstName" name="firstName" required>
+            <br>
+            <label for="lastName">Last Name: </label>
+            <br>
+            <input type="text" id="lastName" name="lastName" required>
+            <br>
+            <label for="Name">Nick Name: </label>
+            <br>
+            <input type="text" id="nickName" name="nickName" required>
+            <br>
+            <label for="email">Email: </label>
+            <br>
+            <input type="text" id="email" name="email" required>
+            <br>
+            <label for="password">Password: </label>
+            <br>
+            <input type="text" id="password" name="password" required>
+            <br>
+            <label for="date">Date of Birth: </label>
+            <br>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <label for="gender">Gender: </label>
+            <br>
+            <input type="radio" id="malegender" name="malegender" required>
+            <label for="malegender">Male</label>
+            <input type="radio" id="femalegender" name="femalegender" required>
+            <label for="femalegender">Female</label>
+            <input type="radio" id="Other" name="Other" required>
+            <label for="Other">Other</label>
+            <br>
+            <label for="mobile">Mobile: </label>
+            <br>
+            <input type="text" id="mobile" name="mobile" required>
+            <br>
+            <label for="Address">Address: </label>
+            <br>
+            <textarea name = "comment" form = "usrform"></textarea>
+            <br>
+            <input type="button" class="button Submit" id="Submit" name="Submit" value = "Submit" required>
+            <input type="button" class="button Reset" id="Reset" name="Reset" value = "Reset" required>
+        </form>
+        </div>
+    </body>
+</html>
